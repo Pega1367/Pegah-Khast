@@ -1,0 +1,250 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$primary: #26a5d3;
+$dark: #333333;
+$light: #f4f4f4;
+
+@font-face{
+	font-family: 'Anders';
+	src: asset-url('Anders.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'AvenirLTStd-Book';
+	src: asset-url('AvenirLTStd-Book.otf');
+}
+
+
+html{
+    width:100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    
+}
+
+body{
+    width:100%;
+    height:100%;
+    color:$dark;
+    background-color:$light;
+}
+
+//Typography
+
+h1, h2, h3, h4, h5, h6{
+
+    margin: 0 0 35px;
+    text-transform:uppercase;
+    font-family:'AvenirLTStd-Book', "Helvetica Neu", Helvetica, Arial, sans-serif;
+    letter-spacing:1px;
+}
+
+p{
+    margin: 0 0 25px;	
+    font-size:18px;
+    line-height:1.6em;
+}
+
+a{
+    color:$primary;
+
+}
+
+a:hover, a:focus{
+
+    text-decoration:none;
+    color: darken($primary, 20%);
+}
+
+
+// Navigation
+
+.navbar{
+    margin-bottom:0;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    text-transform:uppercase;
+    font-family:'AvenirLTStd-Book', "Helvetica Neu", Helvetica, Arial, sans-serif;
+    background-color:$dark;
+}
+
+.navbar-brand{
+    font-weight:700;
+    color:#999;
+}
+
+#brandSection{
+    color:transparent;
+}
+
+.navbar-brand:focus{
+    outline:none;
+}
+
+.navbar-custom a{
+    color:#999;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition:background .3s ease-in-out;
+    -moz-transition:background .3s ease-in-out;
+    transition:background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover{
+    outline:none;
+    background: rgba(255,255,255,0.2);
+}
+
+.navbar-toggle{
+    padding:4px 6px;
+    font-size:18px;
+    color:#999;
+}
+
+@media(min-width: 767px){
+.navbar{
+    padding:20px 0;
+    border-bottom:none;
+    background:transparent;
+    -webkit-transition:background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition:background .5s ease-in-out, padding .5s ease-in-out;
+    transition:background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse{
+    padding:0;
+    background-color:#f6b0a2;
+}
+
+.navbar-custom.top-nav-collapse{
+    border-bottom:1px solid rgba(255,255,255,0.3); 
+}
+}
+
+// Landing Page
+
+.intro-body{
+    display:table-cell;
+    vertical-align:middle;
+
+}
+
+.brand-heading{
+    font-size:40px;
+    font-family:'AvenirLTStd-Book';
+}
+
+@media(min-width: 767px){
+   
+    .intro{
+    padding:0;
+    margin:0;
+}
+
+.brand-heading{
+    font-size:100px !important;
+    color:transparent;
+}
+
+.intro-text{
+    font-size:25px;
+}
+    }
+
+//Projects Section
+
+.project-section{
+	width:100%;
+	height:100%;
+	padding:50px 0;
+	color:$dark;
+	background-color:$light;
+	}
+
+#contact{
+	background:$light;
+	color:$dark;
+	padding-bottom:40px;
+}
+
+//footer Section
+
+footer{
+	margin-top:10px;
+	padding-top:30px;
+	height:80px;
+	text-align:center;
+}
+
+.page-scroll{
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -webkit-transform;
+	-moz-transition-duration: 1s;
+}
+
+.row{
+	margin-top:80px;
+
+	}
+
+
+.flexbox {  
+  padding:100px 0; 
+  display: -webkit-flex;  
+  display: -ms-flexbox;  
+  display: flex;
+  overflow: hidden;
+  height:100vh;
+}
+.flexbox .col {
+  flex: 1;
+  padding: 20px;
+}
+.flexbox .col:nth-child(1) { 
+  background: #ccc; 
+  -webkit-order: 1; 
+      -ms-flex-order: 1; 
+          order: 1;
+}
+.flexbox .col:nth-child(1) { 
+  background: #eee;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.flexbox .col:nth-child(3) { 
+  background: #eee;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#mainPicture{
+    background: url('pegah.png') no-repeat center center scroll;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    
+}
+
+@media(min-width: 767px){
+   
+ .flexbox{
+    padding:0;
+    margin:0;
+}
+
+.brand-heading{
+    font-size:100px !important;
+}
+
+
+}
+
