@@ -1,53 +1,162 @@
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Pouya Khast</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <li class="hidden"><a href="#page-top"></a></li>
-          <li class="page-scroll"><a href="#about">About me</a></li>
-          <li class="page-scroll"><a href="#projects">My Projects</a></li>
-          <li class="page-scroll"><a href="#hobby">Other Activities</a></li>
-          <li class="page-scroll"><a href="#contact">Contacts</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><%= image_tag ("Brand.png"), :size => "40x40" %></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>  
+    
   <!--/Intro section -->
-  <div class="flexbox">
-    <div class="col">
-      
+  <section id="intro">
+    <div class="Aligner">
+      <div class="Aligner-item--bottom Aligner-item" style="padding-bottom:100px;">
+        <h2 style="font-size:24px; color:#f6b0a2;"><strong>HELLO, I'M</strong></h2>
+        <h1 STYLE="font-size:36px; color:#040404;" id="pegahName">PEGAH KHAST</h1>
+        <h3 style="font-size:20px; color:#666;"><i class="fa fa-heart" aria-hidden="true" style="color:#f6b0a2; margin-left:-5px; padding-right:10px;"></i>UX/UI Designer</h3>
+        <h3 style="font-size:20px; color:#666;"><i class="fa fa-heart" aria-hidden="true" style="color:#f6b0a2; margin-left:-5px; padding-right:10px;"></i>Front End Developer</h3>
+        <h3 style="font-size:20px; color:#666;"><i class="fa fa-heart" aria-hidden="true" style="color:#f6b0a2; margin-left:-5px; padding-right:10px;"></i>Architect</h3>
+      </div>
     </div>
-    <div class="col" id="mainPicture">
-      
+    <div><img src="assets/pegah.png"></div>
+  </section>
+  <!--/about section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" style="font-size:24px; color:#040404">About</h2>
+          <hr style="border-color:#f6b0a2; border-width: 5px; max-width:20px; margin-top:-20px;">
+        </div>
+      </div>
     </div>
-  </div>
-
-
-
- 
-  <section id="about" class="container content-section">
-    
-  </section>
-
-  <section id="projects">
-    
-  </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-5x fa-dribbble" aria-hidden="true" style="color:#f6b0a2; padding-bottom:25px; padding-top:25px;"></i>
+            <h3 style="font-size:20px;"><strong><span style="color:#f6b0a2;">U</span>I Design</strong></h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-5x fa-cube" aria-hidden="true" style="color:#f6b0a2; padding-bottom:25px; padding-top:25px;"></i>
+            <h3 style="font-size:20px;"><strong><span style="color:#f6b0a2;">U</span>X Desing</strong></h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-5x fa-mobile" aria-hidden="true" style="color:#f6b0a2; padding-bottom:25px; padding-top:25px;"></i>
+            <h3 style="font-size:20px;"><strong><span style="color:#f6b0a2;">M</span>obile Desing</strong></h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-5x fa-code" aria-hidden="true" style="color:#f6b0a2; padding-bottom:25px; padding-top:25px;"></i>
+            <h3 style="font-size:20px;"><strong><span style="color:#f6b0a2;">W</span>eb Technologies</strong></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-top:30px;">
+          <p class="text-faded" style="font-size:20px; color: #666;">Hi, I am passionate, highly enthusiastic ux/ui designer with strong desire for knowledge and new challenges. I am actively involved with latest technologies and updates in web development industry and a fast learner who picks up new skills quickly. Self-educated, self-motivated and always thinking outside the box.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
   
-  <section id="contact" class="content-selection text-center">
-    
+  <!--/Projects section -->
+  <section id="projects" style="background-color:#f1f1f1;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" style="font-size:24px; color:#040404">Projects</h2>
+          <hr style="border-color:#f6b0a2; border-width: 5px; max-width:20px; margin-top:-20px;">
+          <p class="text-faded" style="font-size:20px; color: #666; padding-top:15px;">Below are some few of my favorite projects. To see more of my work,</br> checkout my dribbble as I post quite often.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6" style="padding-top:50px;">
+          <div class="hovereffect">
+            <%= image_tag ("rsz_1project1.png"), :class => "img-responsive" %>
+            <div class="overlay">
+              <h2>Jukebox app</h2>
+              <a class="info" href="https://dribbble.com/shots/2700299-Jukeboxapp">Dribbble here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" style="padding-top:50px;">
+          <div class="hovereffect">
+            <%= image_tag ("rsz_project2.png"), :class => "img-responsive" %>
+            <div class="overlay">
+              <h2>Aurora Exchange project</h2>
+              <a class="info" href="https://dribbble.com/shots/2555841-Dribble-Auto-Invest">Dribbble here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" style="padding-top:50px;">
+          <div class="hovereffect">
+            <%= image_tag ("rsz_project3.png"), :class => "img-responsive" %>
+            <div class="overlay">
+              <h2>Menu Suggestions</h2>
+              <a class="info" href="https://dribbble.com/shots/2646743-Menu-Suggestions">Dribbble here</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <a href="https://dribbble.com/Peggykh" class="btn btn-lg btn-outline">More On Dribbble</a>
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+  <!--/Contact section -->
+  <section id="contact">
+    <div class="Aligner" style="background-color:#f6b0a2;">
+      <div class="Aligner-item" style="padding-top:60px; padding-bottom:10px;">
+          <h3><a href="https://dribbble.com/Peggykh" style="font-size:24px; color:white;">Dribbble</a></h3>
+          <h3><a href="https://fi.linkedin.com/in/pegah-khast-718a6194" style="font-size:24px; color:white;">LinkedIn</a></h3>
+          <h3><a href="download_cv" style="font-size:24px; color:white;">My resume</a></h3>
+          <h3><a href="https://www.instagram.com/pegaaaaaasus/" style="font-size:24px; color:white;">Instagram</a></h3>
+          <h3><a href="https://www.facebook.com/pegah.khast" style="font-size:24px; color:white;">Facebook</a></h3>
+      </div>
+    </div>
+    <div class="Aligner">
+      <div class="Aligner-item">
+        <h2 style="font-size:24px; color:#040404;">Write me a line or two at</h2>
+        <hr style="height:5px; border:none; color:#f6b0a2; background-color:#f6b0a2; width:6%; text-align:left; margin: -30px auto 0 0;">
+        <h2 style="font-size:20px; color:#666; padding-top:20px;">pegahkhast@gmail.com</h2>
+      </div>  
+    </div>
   </section>
-  
-  <footer style="width: 50%;  margin: 0 auto;">
-    <p>Pegah Khast &copy; 2016, All Rights Reserved</p>
-  </footer>
-  
 </body>
