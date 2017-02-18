@@ -4,8 +4,8 @@ class WelcomeController < ApplicationController
   
   def download_cv
     send_file(
-    "#{Rails.root}/public/CV.pdf",
-    filename: "pegah-Khast-cv.pdf",
+    "#{Rails.root}/public/pegah-Khast-cv.pdf",
+    filename: "pegah-Khast-cv.pdff",
     type: "application/pdf"
   )
   end
